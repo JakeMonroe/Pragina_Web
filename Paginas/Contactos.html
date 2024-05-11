@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Estilos/Estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Proyecto libre</title>
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="../Imagenes/logo.jpg" alt="" />
+      <h1 id="nombre">Pastelería JaM</h1>
+      <nav>
+        <ul class="etiquetas">
+          <li class="niveles"><a href="../Indrex.html">Inicio</a></li>
+          <li class="niveles">
+            <a href="../Paginas/Catalogo.html">Catalogo</a>
+          </li>
+          <li class="niveles">
+            <a href="../Paginas/Contactos.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="Titulos">Catalogo</h1>
+    <div class="card-container2">
+      <div class="carde">
+        <div class="face front">
+          <img class="img" src="../Imagenes/FOTOFORMULARIO.jpeg" alt="" />
+          <h3>FORMULARIO</h3>
+        </div>
+        <div class="face back">
+          <div class="caja3">
+            <h3>Formulario</h3>
+            <p>
+              Tu opinión es crucial para nuestra mejora continua. ¿Qué podemos
+              mejorar en nuestros productos? ¡Cuéntanos y lo tomaremos en
+              cuenta!
+            </p>
+            <form class="form" action="procesar_pedido.php" method="post">
+              <p class="caja1">
+                <label class="texto" for="nombre">Nombre:</label>
+                <input type="text" id="barra" name="nombre" required />
+              </p>
+              <p class="caja1">
+                <label class="texto" for="correo">Correo Electrónico:</label>
+                <input type="email" id="barra" name="correo" required />
+              </p>
+              <p class="caja1">
+                <label class="texto" for="telefono">Teléfono:</label>
+                <input type="tel" id="barra" name="telefono" required />
+              </p>
+              <p class="caja1">
+                <label class="texto" for="producto">Producto:</label>
+                <select id="barra" name="producto" required>
+                  <option value="">Selecciona un producto</option>
+                  <option value="pastel_chocolate">Pastel de Chocolate</option>
+                  <option value="tarta_fresa">Tarta de Fresa</option>
+                  <option value="cupcakes_vainilla">
+                    Cupcakes de Vainilla
+                  </option>
+                  <!-- Puedes agregar más opciones de productos aquí -->
+                </select>
+              </p>
+              <p class="caja1">
+                <label class="texto" for="mensaje">Mensaje Adicional:</label
+                ><br />
+                <textarea
+                  id="barra"
+                  name="mensaje"
+                  rows="4"
+                  cols="30"
+                ></textarea>
+              </p>
+              <p class="caja1">
+                <input type="submit" value="Enviar Opinion" />
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="carde">
+
+        <p id="complemet">
+          Estamos deseando facilitarte nuestra ubicación. Para ello, hemos incluido un mapa detallado que revela nuestra dirección exacta y te muestra nuestra ubicación con precisión. ¡Esperamos que te resulte útil para encontrarnos sin problemas!
+        </p>
+        <div id="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.475224709868!2d-74.1516793260344!3d4.687167541776848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ceac0718d2b%3A0xf7a67d7ec19c9c63!2sCl.%2022H%20%23114a-41%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1715304713647!5m2!1ses!2sco" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/tupagina" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a
+          href="https://api.whatsapp.com/send?phone=+57 3212076788"
+          target="_blank"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+        <a href="https://www.instagram.com/tupagina" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+      <p>&copy; 2024 Pastelería JaM - Todos los derechos reservados</p>
+      <p>SENA - CENIGRAF - ADSO</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+ 
+}
+header{
+    width: 100%;
+    height: 180px;
+    background-image: url("../Imagenes/Fondo1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    background-image: url("../Imagenes/pepiao.png");
+    background-size: cover;
+}
+#logo{
+    left: 6%;
+    width: 150px;
+    height: 150px;
+    margin-top: 12px;
+    border-radius: 50%;
+}
+
+#nombre{
+    font-family: "Satisfy", cursive;
+    position: absolute;
+    top: 35px;
+    left: 170px;
+    font-size: 80px;
+    color: #ffe5ec;
+}
+@media screen and (max-width: 768px) {
+        #nombre{
+            margin-top: 25px;
+            font-size: 50px;
+        }
+    }
+.etiquetas{
+    margin-left: 10%;
+    margin-top: 20px;
+    position: absolute;
+    top: 5px;
+    left: 70%;
+    font-size: 30px;
+    font-family: "Satisfy", cursive;
+}
+.niveles{
+    display: block;
+}
+
+.rueda{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    display: flex;
+    width: 80%;
+    height: 500px;
+}
+
+.rueda img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .6;
+    transition: .5s ease;
+    border-width: 10px;
+    border-style: double;
+    border-color: #008b8b;
+}
+
+.rueda img:hover{
+    cursor: crosshair;
+    width: 400px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+article {
+    padding: 20px;
+    text-align: center;
+}
+
+.Titulos {
+    text-align: center;
+    font-family: "Satisfy", cursive;
+    margin-top: 15px;
+    color: #333;
+    font-size: 40px; 
+    margin-bottom: 10px;
+}
+
+#p1 {
+    color: black;
+    font-size: 20px; 
+    line-height: 1.6;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-style: italic;
+    font-weight: 500;
+}
+#p2 {
+    color: black;
+    font-size: 20px; 
+    line-height: 1.6;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 3cm;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+
+
+/* Estilos para el footer */
+#fot {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+
+}
+
+footer {
+    background-image: url("../Imagenes/Fondo1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    color: black;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #666;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00ffff ; /* Cambia el color al pasar el ratón sobre el icono */
+}
+
+.card-container {
+    display: flex; /* Utilizamos flexbox para colocar las cartas en línea */
+    justify-content: space-around; /* Distribuye el espacio entre las cartas de manera uniforme */
+     margin-bottom: 2%;
+}
+  
+  .card-container2 {
+    margin-top: 2%;
+    display: flex; 
+    justify-content: space-around; 
+    margin-bottom: 3cm;
+  }
+
+  .card {
+    position: relative; /* Añadimos posición relativa para alinear los elementos internos */
+    width: 350px;
+    height: 400px;
+    margin: 20px;
+  }
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+
+}
+
+.card .front .img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-family: cursive;
+    color: #fff;
+    background-color: #000;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background-image: url("../Imagenes/fondo\ tarjeta.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+
+}
+
+.card .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back a{
+    color: black;
+}
+
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p{
+    font-size: medium;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*
+///////////////////////*/
+.carde {
+    position: relative; /* Añadimos posición relativa para alinear los elementos internos */
+    width: 650PX;
+    height: 700px;
+    margin: 20px;
+  }
+
+.carde .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+
+
+.carde .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+
+}
+
+.carde .front .img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.carde .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-family: cursive;
+    color: #fff;
+    background-color: #000;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.carde .back{
+    transform: perspective(600px) rotateY(180deg);
+    background-image: url("../Imagenes/fondo\ tarjeta.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+
+}
+
+.carde .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.carde .back a{
+    color: black;
+}
+
+.carde .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.carde .back p{
+    font-size: medium;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.carde:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.carde:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*
+*/
+
+
+.caja3 {
+    height: 90%;
+    width: 90%; /* Cambiado el ancho para ocupar más espacio disponible */
+    max-width: 600px; /* Establecido un ancho máximo para evitar que el formulario se extienda demasiado */
+    margin: 20px auto; /* Centrado el contenedor */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    margin-bottom: 3cm;
+}
+
+.caja1{
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin: auto;
+    display: flex;
+    text-align: justify;
+}
+.caja3 h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    margin: 0 auto;
+}
+
+label {
+    display: flex;
+    margin-bottom: 5px;
+    margin: 10%px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: calc(100% - 22px); /* Ajustado el ancho para tener en cuenta el padding y el borde */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-right: 0px;
+
+}
+
+input[type="submit"] {
+    margin-top: 10%;
+    margin-bottom: 1%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.texto{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin: block;
+    width: 150px;
+    font-size: 100%;
+
+}
+#barra{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+#map-container {
+    margin-top: 5%;
+    position: relative;
+    width: 100%;
+    height: 80%; /* Altura del mapa */
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Elimina el borde del iframe */
+  }
+
+  #complemet{
+    font-size: medium;
+    font-family: cursive;
+    font-style: italic;
+  }
+ 
